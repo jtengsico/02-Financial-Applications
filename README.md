@@ -1,12 +1,9 @@
 # Loan Qualifier Application
+
 This is an application that utilizes the python command-line interface (CLI) 
+that makes it easy for users to identify loans that they qualify for. This application uses data from a csv file "data_rate_sheet" and information from the user to output a list of applicabale loans. 
 
-This is a command line application utilizing python 3.7 that allows users to quickly match applicants with qualifying loans. 
-
-#fix 
-
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
-
+#fix wording?
 ---
 
 ## Technologies
