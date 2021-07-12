@@ -1,17 +1,20 @@
 # -*- coding: utf-8 -*-
 """Loan Qualifier Application.
 
-This is a command line application to match applicants with qualifying loans.
+This is a python command line application to match applicants with qualifying loans.
 
 Example:
     $ python app.py
 """
+# Import packages
 import sys
 import fire
 import questionary
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv
+from questionary.constants import YES_OR_NO
+
+from qualifier.utils.fileio import load_csv, save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -37,7 +40,6 @@ def load_bank_data():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
 
     return load_csv(csvpath)
-
 
 def get_applicant_info():
     """Prompt dialog to get the applicant's financial information.
@@ -108,9 +110,22 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
+    # Usability dialog for saving the qualifying loans to a CSV file.
+    save_qualifying_loans = questionary.confirm("Save qualifying loans to CSV?").ask()
+    
+    if save_qualifying_loans == :
+        csvpath = Path('.qualifier/data/qualifying_loans.csv')
+        print("Your qualifying loans have been saved as a csv file. ")
+   
+    elif save_qualifying_loans == ('n'):
+        print("Your qualifying loans will not be saved as a csv file.")
+    else:
+        sys.exit
+   
+   if not csvpath.exists():
+        sys.exit(f"Oops! Can't find this path: {csvpath}")
 
+    return load_csv(csvpath)
 
 def run():
     """The main function for running the script."""
@@ -126,7 +141,7 @@ def run():
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
 
-    # Save qualifying loans
+    # Save qualifying loans as CSV file 
     save_qualifying_loans(qualifying_loans)
 
 

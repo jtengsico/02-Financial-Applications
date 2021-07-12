@@ -15,10 +15,11 @@ The project utilizes the following python packages:
 In this section, you should include detailed installation notes containing code blocks and screenshots.
 Install the following packages before running the code:
 
->** "pip install fire" 
->** "pip install questionary"
->** "pip install pytest"
->** "pip install mkdocs"
+** pip install sys
+** pip install fire 
+** pip install questionary
+
+
 
 ---
 
