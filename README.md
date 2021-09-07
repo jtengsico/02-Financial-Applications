@@ -1,11 +1,11 @@
 # Loan Qualifier App
 ---
-This is an application that utilizes the python command-line interface (CLI) 
-that makes it easy for users to identify loans that they qualify for. This application uses data from a csv file "data_rate_sheet" and information from the user to output a list of applicable loans. 
+This application utilizes the python command-line interface (CLI) users to identify loans that they qualify for. This application uses data from the csv file "data_rate_sheet" and information from the user to output a list of applicable loans. 
 
 
 ## Technologies
 ---
+Python 3.7
 The project utilizes the following python packages: 
 
 
@@ -19,13 +19,6 @@ Install the following packages before running the code:
 ** pip install fire 
 ** pip install questionary
 
-
-
----
-
-## Example of Application Usage
-
-This section should include screenshots, code blocks, or animations showing how your project works.
 
 ---
 
@@ -63,4 +56,4 @@ Initial code for the app was developed by 2U Trilogy Education for the UC Berkel
 ---
 
 ## Contributing to Loan App
-All contributions, bug fixes, and improvements are accepted and greatly appreciated. Please contact contributor for additional information. 
+All contributions, bug fixes, and improvements are accepted. Please contact contributor for additional information. 
