@@ -5,14 +5,14 @@ This application utilizes the python command-line interface (CLI) users to ident
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots. You should be using at least python 3.7. 
+In this section, you should include detailed installation notes containing code blocks and screenshots. In your terminal, navigate to the directory containing the loan qualifier app. Run the app.py in your terminal and questions from the app should pop up. 
+You should be using at least python 3.7. 
 Install the following packages before running the code:
 
 ** pip install sys
 ** pip install fire 
 ** pip install questionary
 
-In your terminal, navigate to the directory containing the loan qualifier app. Run the app.py in your terminal and questions from the app should pop up. 
 ---
 
 ## Contributor 
